@@ -396,6 +396,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						position: new google.maps.LatLng(17.4447918, 78.34830979999992),
 						map: map,
 					});
+					infowindow = new google.maps.InfoWindow({content:'<strong><font color="black">E-227, OBH, IIIT Hyderabad</strong><br>IIIT Hyderabad<br></font>'});
+					google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});
+					infowindow.open(map,marker);
 				}
 				google.maps.event.addDomListener(window, 'load', init);
 			</script>
