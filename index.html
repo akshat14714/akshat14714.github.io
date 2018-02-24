@@ -381,9 +381,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="col-md-7 contact-map-right">
 		<div id="map"></div>
 			<!-- Map-JavaScript -->
+			<!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCt_bOk-A-aHlY77XBzUs4woX0gp_hnaY&callback=init" async defer></script> -->
 			<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCt_bOk-A-aHlY77XBzUs4woX0gp_hnaY&callback=init" async defer></script>
 			<script type="text/javascript">
-				google.maps.event.addDomListener(window, 'load', init);
 				function init() {
 					var mapOptions = {
 						zoom: 15,
@@ -397,6 +397,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						map: map,
 					});
 				}
+				google.maps.event.addDomListener(window, 'load', init);
 			</script>
 		<!-- //Map-JavaScript -->
 
